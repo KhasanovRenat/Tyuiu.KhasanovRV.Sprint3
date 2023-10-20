@@ -37,7 +37,7 @@ namespace Tyuiu.KhasanovRV.Sprint3.Task0.V7
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Сумма ряда" + ds.GetSumSeries(a, startValue, stopValue));
+            Console.WriteLine("Сумма ряда " + ds.GetSumSeries(a, startValue, stopValue));
             Console.ReadKey();
         }
     }
