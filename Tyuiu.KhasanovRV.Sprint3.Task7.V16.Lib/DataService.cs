@@ -16,9 +16,17 @@ namespace Tyuiu.KhasanovRV.Sprint3.Task7.V16.Lib
             double y;
             for (int x = startValue; x <= stopValue; x++)
             {
-                y = Math.Cos(x) / (x - 0.4) + Math.Sin(x) * 8 * x + 2;
-                res[i] = Math.Round(y, 2, MidpointRounding.AwayFromZero);
-                i++;
+                if (x != 0.4)
+                {
+                    y = Math.Cos(x) / (x - 0.4) + Math.Sin(x) * 8 * x + 2;
+                    res[i] = Math.Round(y, 2, MidpointRounding.AwayFromZero);
+                    i++;
+                }
+                else
+                {
+                    res[i] = 0;
+                    i++;
+                }
             }
             return res;
 
